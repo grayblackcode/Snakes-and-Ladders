@@ -38,14 +38,11 @@ players = []
 for x in range(0, 4):
     register()
 
-for player in players:
-    print(player.name, player.position)
-
 
 def play():
     player_index = 0
     while True:
-        if player_index < len(players):  # if no winner player index resets to 0
+        if player_index < len(players):  # if no winner player_index resets to 0
             curr_player = players[player_index]
             print(f"\n{curr_player.name}'s turn")  # this person's turn
             print(f"{curr_player.name}'s initial position: {curr_player.position}")
